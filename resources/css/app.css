@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.table-hover{
+    @apply w-full;
+}
+
+.table-hover > thead {
+    @apply text-sm bg-gray-100 dark:bg-gray-900;
+}
+
+.table-hover th {
+    @apply text-center border-y border-gray-100 px-4 py-2;
+}
+
+.table-hover > tbody > tr {
+    @apply hover:bg-gray-200 dark:hover:bg-gray-500;
+}
+.table-hover > tbody > tr > td {
+    @apply border-y border-gray-200 px-4 py-1 text-sm
+}
+
+/* .input-bordered{
+    @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+} */
+
+.input{
+    @apply bg-gray-50 text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700  dark:placeholder-gray-400 dark:text-white
+}
+
+.input-bordered{
+    @apply border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:focus:ring-blue-500 dark:focus:border-blue-500
+}
+
+.input-error{
+    @apply border border-red-500 dark:border-red-600 focus:ring-red-500
+}
+
+.label{
+    @apply block mb-2 font-medium text-gray-900 dark:text-white
+}
+
+.label-sm{
+    @apply text-sm
+}
+
+.top-100 {top: 100%}
+.bottom-100 {bottom: 100%}
+.max-h-select {
+    max-height: 300px;
+}
